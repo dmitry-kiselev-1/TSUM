@@ -1,0 +1,113 @@
+GET http://localhost:22941/api/queue HTTP/1.1
+Host: localhost:22941
+Authorization: Negotiate oXcwdaADCgEBoloEWE5UTE1TU1AAAwAAAAAAAABYAAAAAAAAAFgAAAAAAAAAWAAAAAAAAABYAAAAAAAAAFgAAAAAAAAAWAAAABXCiOIGAbEdAAAAD+abhyhQQoyjRNjKYL78JOKjEgQQAQAAAJ2uST5bgnMNAAAAAA==
+
+
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-SourceFiles: =?UTF-8?B?YzpcVEZTXFBhcmtpbmdRdWV1ZVxQYXJraW5nUXVldWUuU2VydmljZVxhcGlccXVldWU=?=
+Persistent-Auth: true
+X-Powered-By: ASP.NET
+WWW-Authenticate: Negotiate oRswGaADCgEAoxIEEAEAAAB5ThUppzXUfQAAAAA=
+Date: Mon, 15 Feb 2016 18:09:49 GMT
+Content-Length: 1204
+
+[{"input":"2016-02-15T19:09:57","parkingCard":"3c7a9fc8-abc4-43","output":"2016-02-15T22:34:35","rotation":0,"position":10},{"input":"2016-02-15T19:08:29","parkingCard":"ParkingCard_02","output":"2016-02-15T21:04:35","rotation":0,"position":1},{"input":"2016-02-15T19:08:29","parkingCard":"ParkingCard_03","output":"2016-02-15T21:14:35","rotation":0,"position":2},{"input":"2016-02-15T19:08:29","parkingCard":"ParkingCard_04","output":"2016-02-15T21:24:35","rotation":0,"position":3},{"input":"2016-02-15T19:08:29","parkingCard":"ParkingCard_05","output":"2016-02-15T21:34:35","rotation":0,"position":4},{"input":"2016-02-15T19:08:29","parkingCard":"ParkingCard_06","output":"2016-02-15T21:44:35","rotation":0,"position":5},{"input":"2016-02-15T19:08:29","parkingCard":"ParkingCard_07","output":"2016-02-15T21:54:35","rotation":0,"position":6},{"input":"2016-02-15T19:08:29","parkingCard":"ParkingCard_08","output":"2016-02-15T22:04:35","rotation":0,"position":7},{"input":"2016-02-15T19:08:29","parkingCard":"ParkingCard_09","output":"2016-02-15T22:14:35","rotation":0,"position":8},{"input":"2016-02-15T19:08:29","parkingCard":"ParkingCard_10","output":"2016-02-15T22:24:35","rotation":0,"position":9}]
+
+------------------------------------------------------------------
+
+GET http://localhost:22941/api/queue/ParkingCard_02 HTTP/1.1
+Host: localhost:22941
+
+
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-SourceFiles: =?UTF-8?B?YzpcVEZTXFBhcmtpbmdRdWV1ZVxQYXJraW5nUXVldWUuU2VydmljZVxhcGlccXVldWVcUGFya2luZ0NhcmRfMDI=?=
+Persistent-Auth: true
+X-Powered-By: ASP.NET
+Date: Mon, 15 Feb 2016 18:11:24 GMT
+Content-Length: 119
+
+{"input":"2016-02-15T19:08:29","parkingCard":"ParkingCard_02","output":"2016-02-15T21:04:35","rotation":0,"position":1}
+
+------------------------------------------------------------------
+
+PUT http://localhost:22941/api/queue/ParkingCard_11 HTTP/1.1
+Host: localhost:22941
+Content-Length: 0
+
+
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-SourceFiles: =?UTF-8?B?YzpcVEZTXFBhcmtpbmdRdWV1ZVxQYXJraW5nUXVldWUuU2VydmljZVxhcGlccXVldWVcUGFya2luZ0NhcmRfMTE=?=
+Persistent-Auth: true
+X-Powered-By: ASP.NET
+Date: Mon, 15 Feb 2016 18:11:50 GMT
+Content-Length: 134
+
+{"input":"2016-02-15T21:11:50.8908866+03:00","parkingCard":"ParkingCard_11","output":"2016-02-15T22:44:35","rotation":0,"position":11}
+
+------------------------------------------------------------------
+
+DELETE http://localhost:22941/api/queue/ParkingCard_04?reason=vip HTTP/1.1
+Host: localhost:22941
+Authorization: Negotiate oXcwdaADCgEBoloEWE5UTE1TU1AAAwAAAAAAAABYAAAAAAAAAFgAAAAAAAAAWAAAAAAAAABYAAAAAAAAAFgAAAAAAAAAWAAAABXCiOIGAbEdAAAAD37ToEyzmeoe+dpbiLG+za6jEgQQAQAAALZa25sYxlLrAAAAAA==
+
+
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-SourceFiles: =?UTF-8?B?YzpcVEZTXFBhcmtpbmdRdWV1ZVxQYXJraW5nUXVldWUuU2VydmljZVxhcGlccXVldWVcUGFya2luZ0NhcmRfMDQ=?=
+Persistent-Auth: true
+X-Powered-By: ASP.NET
+WWW-Authenticate: Negotiate oRswGaADCgEAoxIEEAEAAABVz6scg9BsBAAAAAA=
+Date: Mon, 15 Feb 2016 19:49:44 GMT
+Content-Length: 160
+
+{"outputReason":null,"outputReasonId":"V","input":"2016-02-15T22:23:35","parkingCard":"ParkingCard_04","output":"2016-02-15T22:49:45","rotation":1,"position":1}
+
+------------------------------------------------------------------
+
+POST http://localhost:22941/api/queue?output=2016-02-16T17:14:49 HTTP/1.1
+Host: localhost:22941
+Content-Length: 0
+Authorization: Negotiate oXcwdaADCgEBoloEWE5UTE1TU1AAAwAAAAAAAABYAAAAAAAAAFgAAAAAAAAAWAAAAAAAAABYAAAAAAAAAFgAAAAAAAAAWAAAABXCiOIGAbEdAAAAD66MZdKF6X0O416sU5n4mwGjEgQQAQAAAHiRj0pn3PUhAAAAAA==
+
+
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-SourceFiles: =?UTF-8?B?YzpcVEZTXFBhcmtpbmdRdWV1ZVxQYXJraW5nUXVldWUuU2VydmljZVxhcGlccXVldWU=?=
+Persistent-Auth: true
+X-Powered-By: ASP.NET
+WWW-Authenticate: Negotiate oRswGaADCgEAoxIEEAEAAAD91nrqjyZZXgAAAAA=
+Date: Tue, 16 Feb 2016 12:55:40 GMT
+Content-Length: 4
+
+null
+
+------------------------------------------------------------------
+

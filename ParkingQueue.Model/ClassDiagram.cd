@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ParkingQueue.Model.Operator">
+    <Position X="6.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAQACAEAAAAAAAAQAAAAAAg=</HashCode>
+      <FileName>BusinessLogic\Operator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ParkingQueue.Model.OutputReason">
+    <Position X="9.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAgAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessLogic\OutputReason.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParkingQueue.Model.Queue">
+    <Position X="3.5" Y="3.5" Width="1.75" />
+    <InheritanceLine Type="ParkingQueue.Model.QueueBase" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="2.757" />
+        <Point X="5.25" Y="3.125" />
+        <Point X="5.062" Y="3.125" />
+        <Point X="5.062" Y="3.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAABAgAAAAAAAEAEAAIAAAAAAAAAAAAg=</HashCode>
+      <FileName>BusinessLogic\Queue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.148" />
+  </Class>
+  <Class Name="ParkingQueue.Model.QueueHistory">
+    <Position X="6.25" Y="3.5" Width="1.5" />
+    <InheritanceLine Type="ParkingQueue.Model.QueueBase" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="2.757" />
+        <Point X="5.25" Y="3.125" />
+        <Point X="6.438" Y="3.125" />
+        <Point X="6.438" Y="3.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>BusinessLogic\QueueHistory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OutputReason" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.325" />
+  </Class>
+  <Class Name="ParkingQueue.Model.QueueBase">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEIAAAAAAgAIAgAAAIAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessLogic\QueueBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParkingQueue.Model.Parameter">
+    <Position X="8.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAABAAAAgAAAAAAAAAAAAAAAgAAAAAAg=</HashCode>
+      <FileName>BusinessLogic\Parameter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ParkingQueue.Model.Repository">
+    <Position X="0.75" Y="7.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIUAgQAAAAAAAAAFAAIAg=</HashCode>
+      <FileName>System\Repository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParkingQueue.Model.RepositoryInitializer">
+    <Position X="2.5" Y="7.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>System\RepositoryInitializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParkingQueue.Model.QueueManager">
+    <Position X="0.75" Y="3.5" Width="2.25" />
+    <Members>
+      <Field Name="Locker" Hidden="true" />
+      <Field Name="OutputForecastParam" Hidden="true" />
+      <Field Name="RotationCountLimitParam" Hidden="true" />
+      <Field Name="RotationTimeLimitParam" Hidden="true" />
+      <Field Name="ViewLimitParam" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="ParkingQueue.Model.QueueManager.SortPositionsEnum" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BusinessLogic\QueueManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgCgAAAAAAAAAgAACAAARAEGEAAAAAAAAEAAE=</HashCode>
+      <FileName>BusinessLogic\QueueManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParkingQueue.Model.Log">
+    <Position X="5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAABAABAIAAAAAg=</HashCode>
+      <FileName>System\Log.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ParkingQueue.Model.Notifier">
+    <Position X="0.75" Y="0.5" Width="1.75" />
+    <Members>
+      <Method Name="OnQueueChanged" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>System\Notifier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

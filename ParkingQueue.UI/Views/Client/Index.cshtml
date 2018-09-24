@@ -1,0 +1,38 @@
+﻿
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="~/Scripts/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery.signalR-2.2.0.min.js"></script>
+<script src="~/signalr/hubs"></script>
+
+<table id="queueTable" class="table">
+    <thead>
+        <tr>
+            <th width="12%"></th>
+            <th width="22%">Номер<br />очереди</th>
+            <th width="22%">Парковочная<br />карта</th>
+            <th width="22%">Время подачи<br />автомобиля</th>
+            <th width="22%">Количество<br />опозданий</th>
+        </tr>
+    </thead>
+    <tbody data-bind="foreach: clients">
+        <tr>
+            <td><span id="timer" style="color: red;"></span></td>
+            <td data-bind="text:position"></td>
+            <td data-bind="text:parkingCard"></td>
+            <td data-bind="text:output"></td>
+            <td data-bind="text:rotation"></td>
+        </tr>
+    </tbody>
+</table>
+
+<audio id="player" buffered="auto">
+    <source src="~/Content/Audio/ParkingQueueNotification.mp3" type="audio/mpeg" />
+    <source src="~/Content/Audio/ParkingQueueNotification.ogg" type="audio/ogg; codecs=vorbis" />
+</audio>
+
+<span id="connectionStatus" style="color: red;"></span>
+
+<script type="text/javascript" src="~/ViewModels/ClientViewModel.js"></script>
+
+<script type="text/javascript" src="~/SignalR/PersistentConnection.js"></script>

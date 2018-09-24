@@ -1,0 +1,23 @@
+﻿
+<table id="queueTable" class="table">
+    <thead>
+        <tr>
+            <th>Номер<br />очереди</th>
+            <th>Парковочная<br />карта</th>
+            <th>Время подачи<br />автомобиля</th>
+            <th>Количество<br />опозданий</th>
+        </tr>
+    </thead>
+    <tbody data-bind="foreach: clients">
+        <tr>
+            <td data-bind="text:position"></td>
+            <td data-bind="text:parkingCard"></td>
+            <td data-bind="text:output"></td>
+            <td data-bind="text:rotation"></td>
+        </tr>
+    </tbody>
+</table>
+
+<span id="connectionStatus" style="color: red;"></span>
+
+<script type="text/javascript" src="~/ViewModels/OperatorViewModel.js"></script>
