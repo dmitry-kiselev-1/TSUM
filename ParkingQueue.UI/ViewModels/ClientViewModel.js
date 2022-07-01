@@ -10,7 +10,7 @@ var clientViewModel = {
 // Заменяет содержимое ViewModel целиком, 
 // без реакции на каждое изменение:
 function UpdateViewModel(queue) {
-    //debugger;
+    debugger;
 
     var temp = clientViewModel.clients;
 
